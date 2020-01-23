@@ -4,22 +4,22 @@ const cards = [
 {
 	rank: "queen",
 	suit: "hearts",
-	cardImage: "images/queen-of-hearts.png"
+	cardImage: "images/queen-hearts-cat.png"
 },
 {
 	rank: "queen",
-	suit: "diamonds",
-	cardImage: "images/queen-of-diamonds.png"
+	suit: "spades",
+	cardImage: "images/queen-spades-cat.png"
 },
 {
 	rank: "king",
 	suit: "hearts",
-	cardImage: "images/king-of-hearts.png"
+	cardImage: "images/king-hearts-cat.png"
 },
 {
 	rank: "king",
-	suit: "diamonds",
-	cardImage: "images/king-of-hearts.png"
+	suit: "spades",
+	cardImage: "images/king-spades-cat.png"
 }
 ];
 
@@ -61,6 +61,14 @@ function createBoard() {
 	}
 }
 
+// can't get a javascript reload button to work so have been lazy and done it in html.
+// would ideally like it to not reload the whole page so I can add a score tracker
+// it should rather return the board to the backs of the cards and add a point to a score tracker
+// but alas I can't even get the page to reload tonight :'(
+
+// function reset() {
+//	document.getElementById("resetbutton").addEventListener('click', alert("this doesn't work booooo"));
+//};
 
 
 createBoard();
